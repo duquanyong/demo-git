@@ -1,0 +1,19 @@
+2019-05-28 09:26:26.829  INFO 2632 --- [main] c.example.demo.DemoGitApplicationTests   : Starting DemoGitApplicationTests on 9L9ZL7MT5KT00IF with PID 2632 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-05-28 09:26:26.829 DEBUG 2632 --- [main] c.example.demo.DemoGitApplicationTests   : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-05-28 09:26:26.829  INFO 2632 --- [main] c.example.demo.DemoGitApplicationTests   : No active profile set, falling back to default profiles: default
+2019-05-28 09:26:31.754  INFO 2632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-05-28 09:26:31.797  INFO 2632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-05-28 09:26:33.158  INFO 2632 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-05-28 09:26:33.333  INFO 2632 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-05-28 09:26:35.363  INFO 2632 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-05-28 09:26:35.899  INFO 2632 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-05-28 09:26:35.900  INFO 2632 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-28 09:26:35.902  INFO 2632 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-05-28 09:26:35.935  INFO 2632 --- [main] c.example.demo.DemoGitApplicationTests   : Started DemoGitApplicationTests in 10.83 seconds (JVM running for 13.587)
+2019-05-28 09:26:37.122  INFO 2632 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-05-28 09:26:37.122  INFO 2632 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-05-28 09:26:37.122  INFO 2632 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'

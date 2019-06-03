@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>header</title>
+	<script src="./jquery.min.js"></script>
+	<script>
+		function testAjaxDemo(){
+			$.ajax({ 
+				//url: "index", 
+				//url: "http://ixinge.tech/demo/demo/index",
+				//url: "http://localhost/apis/demo/index",
+				//url: "http://localhost/apis/demo/demo/index",
+				url: "http://localhost:8100/webapp2/test",
+				data : {access_token:'1df2312312asddaew'},
+				success: function(data){
+					 alert(data);
+					 console.log(data);
+				}
+			});
+		}
+	</script>
+</head>
+<body>
+    <input type="button" value="测试Ajax1" id="btn_test" onclick="testAjaxDemo()">
+</body>
+</html>

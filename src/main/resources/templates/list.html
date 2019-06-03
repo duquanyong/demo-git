@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8" />
+<head>
+    <title>Home</title>
+<script th:src="@{jqueryv2.2.4.min.js}"></script>
+<script th:src="@{jquery.pagination.js}"></script>
+<script type="text/javascript">
+    var total_size = 0;//总数据条数
+    var page_size = 30;//每页显示数
+    var pageIndex = 0;//当前页码
+    $(document).ready(function() {
+        // 初始化分页，展示分页信息并动态获取总数据条数、每页展示条数
+        initPagination(pageIndex);
+        //初始化分页插件
+        $("#Pagination").pagination(total_size, {
+            callback : pageselectCallback,
+            prev_text : '上一页',
+            next_text : '下一页',
+            link_to : 'javascript:void(0);',//分页的链接,默认“#”
+            items_per_page : page_size,//每页显示的条目数           
+            num_display_entries : 5,//连续分页主体部分显示的分页条目数   
+            current_page : pageIndex,//当前选中的页面
+            num_edge_entries : 1//两侧显示的首尾分页的条目数
+        });
+    });
+    /**
+     *分页插件回调方法，page_index为当前页码
+     */
+    function pageselectCallback(page_index, jq) {
+        initPagination(page_index);
+    }
+    /**
+     *初始化分页，展示分页信息并动态获取总数据条数、每页展示条数
+     */
+    function initPagination(page_index) {
+        $.ajax({
+            url : "./getList",
+            data : {
+                currentPage : page_index + 1,
+                pageSize : page_size,
+                totalSize : total_size
+            },
+            type : "GET",
+            dataType : "json",
+            async : true,
+            success : function(data) {
+                if (!$.isEmptyObject(data)) {
+                    page_size = data.pageSize;
+                    total_size = data.totalSize;
+                    var htmlStr = "";
+                    $.each(data.list, function(i, item) {
+                        htmlStr += "<li>ID:" + item.id + " 车牌号：" + item.plateNumber + " 油量：" + item.oilQuantity +" GPS时间：" + item.gpsTime +"<li/>";
+                    });
+                    $("#list").html(htmlStr);
+                } else {
+                    alert("没有获取到相关信息！");
+                }
+            }
+        });
+    }
+</script>
+</head>
+<body>
+
+ <div style="text-align:center;">
+        <ul id="list" style="list-style-type: none;">
+        </ul>
+        <div id="Pagination" class=""></div>
+  </div>
+</body>
+</html>
+
+
+ 
+ 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+ 
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="com.example.demo" level="DEBUG"
+		additivity="false">
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+	</logger>
+
+
+	<!-- LOG4J MYBATIS -->
+	<logger name="com.ibatis" level="DEBUG"></logger>
+	 
+	<!-- 	<logger name="com.dqy.spring.boot.mybatis" level="DEBUG"></logger> -->
+
+
+	<root level="INFO">
+		<appender-ref ref="CONSOLE" />
+		<appender-ref ref="FILE" />
+	</root>
+
+</configuration>  

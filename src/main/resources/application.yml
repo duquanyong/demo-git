@@ -1,0 +1,24 @@
+server:
+  port: 9003
+  servlet:
+    context-path: /
+  tomcat:
+    max-connections: 10000  #服务器在任何给定时间接受和处理的最大连接数
+    max-threads: 400  #最大工作线程数。
+    min-spare-threads: 20 #最小工作线程数
+spring:
+  datasource:
+    name: demoDatasource
+    url: jdbc:mysql://192.168.20.59:3306/emcs?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jackson: 
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+mybatis:
+  mapperLocations: classpath:mappers/*.xml
+ 
+logging:
+  file: server_log.log
