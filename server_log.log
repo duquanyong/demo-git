@@ -17,3 +17,1171 @@
 2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
 2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
 2019-05-28 09:26:37.137  INFO 2632 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:29:23.627  INFO 11584 --- [main] com.example.demo.DemoMapTests            : Starting DemoMapTests on 9L9ZL7MT5KT00IF with PID 11584 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:29:23.629 DEBUG 11584 --- [main] com.example.demo.DemoMapTests            : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:29:23.630  INFO 11584 --- [main] com.example.demo.DemoMapTests            : No active profile set, falling back to default profiles: default
+2019-06-03 15:29:24.576  WARN 11584 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.DemoGitApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+2019-06-03 15:29:24.991 ERROR 11584 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.DemoGitApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 37 common frames omitted
+
+2019-06-03 15:29:24.993 ERROR 11584 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3e2e18f2] to prepare test instance [com.example.demo.DemoMapTests@58be6e8]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.DemoGitApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 25 common frames omitted
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 37 common frames omitted
+
+2019-06-03 15:29:25.568  INFO 11584 --- [main] com.example.demo.DemoMapTests            : Starting DemoMapTests on 9L9ZL7MT5KT00IF with PID 11584 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:29:25.568 DEBUG 11584 --- [main] com.example.demo.DemoMapTests            : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:29:25.569  INFO 11584 --- [main] com.example.demo.DemoMapTests            : No active profile set, falling back to default profiles: default
+2019-06-03 15:29:25.703  WARN 11584 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.DemoGitApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+2019-06-03 15:29:25.705 ERROR 11584 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.DemoGitApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 37 common frames omitted
+
+2019-06-03 15:29:25.707 ERROR 11584 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3e2e18f2] to prepare test instance [com.example.demo.DemoMapTests@7b94089b]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:538)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:760)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:460)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:206)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.example.demo.DemoGitApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 25 common frames omitted
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'helloSpringBoot' for bean class [com.example.demo.ws.controller.HelloSpringBoot] conflicts with existing, non-compatible bean definition of same name and class [com.example.demo.controller.HelloSpringBoot]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167)
+	... 37 common frames omitted
+
+2019-06-03 15:30:45.897  INFO 15212 --- [main] com.example.demo.DemoMapTests            : Starting DemoMapTests on 9L9ZL7MT5KT00IF with PID 15212 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:30:45.900 DEBUG 15212 --- [main] com.example.demo.DemoMapTests            : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:30:45.905  INFO 15212 --- [main] com.example.demo.DemoMapTests            : No active profile set, falling back to default profiles: default
+2019-06-03 15:30:49.845  INFO 15212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:30:49.871  INFO 15212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:30:51.002  INFO 15212 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:30:51.250  INFO 15212 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:30:53.748  INFO 15212 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 15:30:54.354  INFO 15212 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 15:30:54.355  INFO 15212 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:30:54.356  INFO 15212 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 15:30:54.409  INFO 15212 --- [main] com.example.demo.DemoMapTests            : Started DemoMapTests in 9.614 seconds (JVM running for 11.367)
+2019-06-03 15:30:58.372  INFO 15212 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-06-03 15:30:58.373  INFO 15212 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:30:58.373  INFO 15212 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-06-03 15:30:58.376  INFO 15212 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:30:58.380  INFO 15212 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:30:58.386  INFO 15212 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:30:58.386  INFO 15212 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:34:26.462  INFO 13276 --- [main] com.example.demo.DemoMapTests            : Starting DemoMapTests on 9L9ZL7MT5KT00IF with PID 13276 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:34:26.464 DEBUG 13276 --- [main] com.example.demo.DemoMapTests            : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:34:26.465  INFO 13276 --- [main] com.example.demo.DemoMapTests            : No active profile set, falling back to default profiles: default
+2019-06-03 15:34:29.487  INFO 13276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:34:29.515  INFO 13276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:34:30.232  INFO 13276 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:34:30.442  INFO 13276 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:34:32.358  INFO 13276 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 15:34:32.932  INFO 13276 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 15:34:32.933  INFO 13276 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:34:32.934  INFO 13276 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 15:34:32.961  INFO 13276 --- [main] com.example.demo.DemoMapTests            : Started DemoMapTests in 7.719 seconds (JVM running for 10.427)
+2019-06-03 15:34:34.673  INFO 13276 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-06-03 15:34:34.673  INFO 13276 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:34:34.674  INFO 13276 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-06-03 15:34:34.677  INFO 13276 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:34:34.681  INFO 13276 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:34:34.683  INFO 13276 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:34:34.684  INFO 13276 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:48:46.727  INFO 14676 --- [main] com.example.demo.DemoMapTests            : Starting DemoMapTests on 9L9ZL7MT5KT00IF with PID 14676 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:48:46.729 DEBUG 14676 --- [main] com.example.demo.DemoMapTests            : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:48:46.730  INFO 14676 --- [main] com.example.demo.DemoMapTests            : No active profile set, falling back to default profiles: default
+2019-06-03 15:48:50.043  INFO 14676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:48:50.071  INFO 14676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:48:50.888  INFO 14676 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:48:51.043  INFO 14676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:48:52.831  INFO 14676 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 15:48:53.375  INFO 14676 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 15:48:53.377  INFO 14676 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:48:53.378  INFO 14676 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 15:48:53.412  INFO 14676 --- [main] com.example.demo.DemoMapTests            : Started DemoMapTests in 7.946 seconds (JVM running for 9.351)
+2019-06-03 15:48:54.959  INFO 14676 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-06-03 15:48:54.961  INFO 14676 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:48:54.962  INFO 14676 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-06-03 15:48:54.968  INFO 14676 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:48:54.971  INFO 14676 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:48:54.976  INFO 14676 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:48:54.977  INFO 14676 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:52:17.078  INFO 14328 --- [main] com.example.demo.DemoMapTests            : Starting DemoMapTests on 9L9ZL7MT5KT00IF with PID 14328 (started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:52:17.080 DEBUG 14328 --- [main] com.example.demo.DemoMapTests            : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:52:17.082  INFO 14328 --- [main] com.example.demo.DemoMapTests            : No active profile set, falling back to default profiles: default
+2019-06-03 15:52:21.233  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:52:21.266  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:52:22.232  INFO 14328 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:52:22.401  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:52:24.667  INFO 14328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 15:52:25.372  INFO 14328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 15:52:25.373  INFO 14328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:52:25.374  INFO 14328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 15:52:25.414  INFO 14328 --- [main] com.example.demo.DemoMapTests            : Started DemoMapTests in 9.365 seconds (JVM running for 10.886)
+2019-06-03 15:52:27.606  INFO 14328 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-06-03 15:52:27.642  INFO 14328 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:52:27.643  INFO 14328 --- [Thread-2] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-06-03 15:52:27.649  INFO 14328 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:52:27.652  INFO 14328 --- [Thread-2] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:52:27.654  INFO 14328 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:52:27.655  INFO 14328 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:54:11.894  INFO 7436 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 7436 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:54:11.912 DEBUG 7436 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:54:11.915  INFO 7436 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 15:54:18.205  INFO 7436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 15:54:18.345  INFO 7436 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 15:54:18.346  INFO 7436 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 15:54:18.903  INFO 7436 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 15:54:18.904  INFO 7436 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6737 ms
+2019-06-03 15:54:19.455  INFO 7436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:54:19.468  INFO 7436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:54:20.522  INFO 7436 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:54:20.666  INFO 7436 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:54:21.865  INFO 7436 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 15:54:22.325  INFO 7436 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 15:54:22.342  INFO 7436 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:54:22.347  INFO 7436 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 15:54:22.882  INFO 7436 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 15:54:22.903  INFO 7436 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 12.334 seconds (JVM running for 13.106)
+2019-06-03 15:54:54.878  INFO 7436 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 15:54:54.879  INFO 7436 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 15:54:54.897  INFO 7436 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2019-06-03 15:54:55.068  INFO 7436 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 15:54:55.084  INFO 7436 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 15:54:56.218 ERROR 7436 --- [http-nio-9003-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]] with root cause
+
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:121)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:995)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:978)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:737)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:579)
+	at com.example.demo.controller.HelloMapController.hello1(HelloMapController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-06-03 15:54:56.412  INFO 7436 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/favicon.ico,ParameterMap:{}
+2019-06-03 15:54:56.414  INFO 7436 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/favicon.ico,ParameterMap:{}
+2019-06-03 15:54:56.494  INFO 7436 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/favicon.ico,ParameterMap:{}
+2019-06-03 15:54:56.495  INFO 7436 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/favicon.ico,ParameterMap:{}
+2019-06-03 15:55:16.830  INFO 7436 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 15:55:16.831  INFO 7436 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 15:55:16.919 ERROR 7436 --- [http-nio-9003-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]] with root cause
+
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:121)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:995)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:978)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:737)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:579)
+	at com.example.demo.controller.HelloMapController.hello1(HelloMapController.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-06-03 15:55:20.663  INFO 7436 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 1, completed tasks = 1]
+2019-06-03 15:58:15.194  INFO 15828 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 15828 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 15:58:15.212 DEBUG 15828 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 15:58:15.214  INFO 15828 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 15:58:18.700  INFO 15828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 15:58:18.749  INFO 15828 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 15:58:18.750  INFO 15828 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 15:58:19.060  INFO 15828 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 15:58:19.061  INFO 15828 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3695 ms
+2019-06-03 15:58:19.440  INFO 15828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 15:58:19.462  INFO 15828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 15:58:20.278  INFO 15828 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 15:58:20.414  INFO 15828 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 15:58:21.173  INFO 15828 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 15:58:21.482  INFO 15828 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 15:58:21.483  INFO 15828 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 15:58:21.485  INFO 15828 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 15:58:21.577  INFO 15828 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 15:58:21.592  INFO 15828 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 7.576 seconds (JVM running for 8.212)
+2019-06-03 15:58:41.159  INFO 15828 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 15:58:41.159  INFO 15828 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 15:58:41.183  INFO 15828 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-06-03 15:58:41.397  INFO 15828 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 15:58:41.412  INFO 15828 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 15:58:43.336 ERROR 15828 --- [http-nio-9003-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]] with root cause
+
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:121)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:995)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:978)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:737)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:579)
+	at com.example.demo.controller.HelloMapController.hello1(HelloMapController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-06-03 15:59:20.412  INFO 15828 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 1, completed tasks = 1]
+2019-06-03 16:00:02.392  INFO 14328 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 14328 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:00:02.397 DEBUG 14328 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:00:02.398  INFO 14328 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:00:06.137  INFO 14328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:00:06.217  INFO 14328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:00:06.217  INFO 14328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:00:06.734  INFO 14328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:00:06.735  INFO 14328 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4232 ms
+2019-06-03 16:00:07.530  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:00:07.562  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:00:08.780  INFO 14328 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:00:08.936  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:00:09.858  INFO 14328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:00:10.209  INFO 14328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:00:10.210  INFO 14328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:00:10.212  INFO 14328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:00:10.342  INFO 14328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:00:10.350  INFO 14328 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 9.097 seconds (JVM running for 10.002)
+2019-06-03 16:00:10.965  INFO 14328 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:00:10.966  INFO 14328 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:00:10.991  INFO 14328 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-06-03 16:00:11.176  INFO 14328 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:00:11.188  INFO 14328 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:00:11.986 ERROR 14328 --- [http-nio-9003-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]] with root cause
+
+org.springframework.web.client.RestClientException: Could not extract response: no suitable HttpMessageConverter found for response type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:121)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:995)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:978)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:737)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:579)
+	at com.example.demo.controller.HelloMapController.hello1(HelloMapController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-06-03 16:01:08.933  INFO 14328 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:02:50.513  INFO 15976 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 15976 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:02:50.520 DEBUG 15976 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:02:50.524  INFO 15976 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:02:54.177  INFO 15976 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:02:54.222  INFO 15976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:02:54.222  INFO 15976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:02:54.454  INFO 15976 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:02:54.454  INFO 15976 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3801 ms
+2019-06-03 16:02:54.810  INFO 15976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:02:54.819  INFO 15976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:02:55.493  INFO 15976 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:02:55.577  INFO 15976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:02:56.353  INFO 15976 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:02:56.668  INFO 15976 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:02:56.669  INFO 15976 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:02:56.670  INFO 15976 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:02:56.734 ERROR 15976 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-9003]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoGitApplication.main(DemoGitApplication.java:25)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+
+2019-06-03 16:02:56.751  INFO 15976 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-03 16:02:56.922  INFO 15976 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-03 16:02:56.926 ERROR 15976 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9003 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9003, or configure this application to listen on another port.
+
+2019-06-03 16:02:56.933  INFO 15976 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-06-03 16:02:56.933  INFO 15976 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:02:56.933  INFO 15976 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-06-03 16:02:56.935  INFO 15976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:02:56.939  INFO 15976 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:02:56.946  INFO 15976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:02:56.946  INFO 15976 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:03:08.315  INFO 14628 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 14628 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:03:08.321 DEBUG 14628 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:03:08.322  INFO 14628 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:03:11.950  INFO 14628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:03:11.990  INFO 14628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:03:11.991  INFO 14628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:03:12.233  INFO 14628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:03:12.234  INFO 14628 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3820 ms
+2019-06-03 16:03:12.578  INFO 14628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:03:12.588  INFO 14628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:03:13.311  INFO 14628 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:03:13.409  INFO 14628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:03:14.115  INFO 14628 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:03:14.357  INFO 14628 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:03:14.359  INFO 14628 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:03:14.362  INFO 14628 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:03:14.449  INFO 14628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:03:14.462  INFO 14628 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 7.126 seconds (JVM running for 7.871)
+2019-06-03 16:03:24.773  INFO 14628 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:03:24.774  INFO 14628 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:03:24.797  INFO 14628 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2019-06-03 16:03:25.014  INFO 14628 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:03:25.031  INFO 14628 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:03:26.328 ERROR 14628 --- [http-nio-9003-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.client.RestClientException: Error while extracting response for type [class com.alibaba.fastjson.JSONObject] and content type [application/xml]; nested exception is org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null'); nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (PushbackInputStream); line: 1, column: 2]] with root cause
+
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+ at [Source: (PushbackInputStream); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1804)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:693)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:591)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2630)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:832)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:729)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4141)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4000)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3084)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:239)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:227)
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:102)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:995)
+	at org.springframework.web.client.RestTemplate$ResponseEntityResponseExtractor.extractData(RestTemplate.java:978)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:737)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:670)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:579)
+	at com.example.demo.controller.HelloMapController.hello1(HelloMapController.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.example.demo.filter.CrosXssFilter.doFilter(CrosXssFilter.java:54)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+
+2019-06-03 16:04:13.407  INFO 14628 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 1, completed tasks = 1]
+2019-06-03 16:05:25.711  INFO 14656 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 14656 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:05:25.715 DEBUG 14656 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:05:25.717  INFO 14656 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:05:31.256  INFO 14656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:05:31.337  INFO 14656 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:05:31.337  INFO 14656 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:05:31.637  INFO 14656 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:05:31.637  INFO 14656 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5815 ms
+2019-06-03 16:05:32.170  INFO 14656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:05:32.189  INFO 14656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:05:33.516  INFO 14656 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:05:33.742  INFO 14656 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:05:35.372  INFO 14656 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:05:36.049  INFO 14656 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:05:36.054  INFO 14656 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:05:36.059  INFO 14656 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:05:36.341  INFO 14656 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:05:36.353  INFO 14656 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 11.717 seconds (JVM running for 12.48)
+2019-06-03 16:06:33.718  INFO 14656 --- [MessageBroker-2] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 3, active threads = 1, queued tasks = 1, completed tasks = 1]
+2019-06-03 16:07:03.259  INFO 14656 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:07:03.263  INFO 14656 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:07:03.288  INFO 14656 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2019-06-03 16:07:03.511  INFO 14656 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:07:03.531  INFO 14656 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:07:06.010  INFO 14656 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:07:06.010  INFO 14656 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:14:46.262  INFO 13512 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 13512 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:14:46.267 DEBUG 13512 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:14:46.269  INFO 13512 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:14:50.050  INFO 13512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:14:50.101  INFO 13512 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:14:50.101  INFO 13512 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:14:50.409  INFO 13512 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:14:50.410  INFO 13512 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4050 ms
+2019-06-03 16:14:51.230  INFO 13512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:14:51.244  INFO 13512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:14:51.301  INFO 13512 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:14:51.418  INFO 13512 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:14:52.092  INFO 13512 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:14:52.328  INFO 13512 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:14:52.329  INFO 13512 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:14:52.330  INFO 13512 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:14:52.409  INFO 13512 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:14:52.414  INFO 13512 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 7.072 seconds (JVM running for 7.696)
+2019-06-03 16:15:51.416  INFO 13512 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:16:58.278  INFO 14396 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 14396 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:16:58.285 DEBUG 14396 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:16:58.286  INFO 14396 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:17:01.753  INFO 14396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:17:01.825  INFO 14396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:17:01.828  INFO 14396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:17:02.100  INFO 14396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:17:02.100  INFO 14396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3692 ms
+2019-06-03 16:17:03.065  INFO 14396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:17:03.088  INFO 14396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:17:03.147  INFO 14396 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:17:03.290  INFO 14396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:17:04.071  INFO 14396 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:17:04.413  INFO 14396 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:17:04.414  INFO 14396 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:17:04.415  INFO 14396 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:17:04.530 ERROR 14396 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-9003]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoGitApplication.main(DemoGitApplication.java:25)
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.Net.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source)
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005)
+	... 14 common frames omitted
+
+2019-06-03 16:17:04.545  INFO 14396 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2019-06-03 16:17:04.606  INFO 14396 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-06-03 16:17:04.610 ERROR 14396 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9003 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9003, or configure this application to listen on another port.
+
+2019-06-03 16:17:04.616  INFO 14396 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2019-06-03 16:17:04.617  INFO 14396 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:17:04.617  INFO 14396 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2019-06-03 16:17:04.622  INFO 14396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:17:04.624  INFO 14396 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:17:04.625  INFO 14396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:17:04.625  INFO 14396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:17:18.408  INFO 13512 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:17:18.409  INFO 13512 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:17:18.425  INFO 13512 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2019-06-03 16:17:18.649  INFO 13512 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:17:18.665  INFO 13512 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:17:19.986  INFO 13512 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:17:19.986  INFO 13512 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:17:20.030  INFO 13512 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/favicon.ico,ParameterMap:{}
+2019-06-03 16:17:20.031  INFO 13512 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/favicon.ico,ParameterMap:{}
+2019-06-03 16:17:20.085  INFO 13512 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/favicon.ico,ParameterMap:{}
+2019-06-03 16:17:20.086  INFO 13512 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/favicon.ico,ParameterMap:{}
+2019-06-03 16:17:51.187  INFO 12492 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 12492 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:17:51.190 DEBUG 12492 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:17:51.191  INFO 12492 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:17:54.211  INFO 12492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:17:54.260  INFO 12492 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:17:54.261  INFO 12492 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:17:54.518  INFO 12492 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:17:54.520  INFO 12492 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3236 ms
+2019-06-03 16:17:55.366  INFO 12492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:17:55.376  INFO 12492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:17:55.410  INFO 12492 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:17:55.491  INFO 12492 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:17:56.135  INFO 12492 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:17:56.364  INFO 12492 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:17:56.365  INFO 12492 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:17:56.367  INFO 12492 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:17:56.444  INFO 12492 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:17:56.451  INFO 12492 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 6.157 seconds (JVM running for 6.745)
+2019-06-03 16:18:15.668  INFO 12492 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:18:15.669  INFO 12492 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:18:15.688  INFO 12492 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-06-03 16:18:15.800  INFO 12492 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:18:15.810  INFO 12492 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:18:16.749  INFO 12492 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:18:16.750  INFO 12492 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:18:55.490  INFO 12492 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:27:36.723  INFO 11284 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 11284 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:27:36.728 DEBUG 11284 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:27:36.730  INFO 11284 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:27:39.719  INFO 11284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:27:39.767  INFO 11284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:27:39.768  INFO 11284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:27:40.014  INFO 11284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:27:40.014  INFO 11284 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3189 ms
+2019-06-03 16:27:40.903  INFO 11284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:27:40.917  INFO 11284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:27:40.959  INFO 11284 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:27:41.042  INFO 11284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:27:41.660  INFO 11284 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:27:42.085  INFO 11284 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:27:42.090  INFO 11284 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:27:42.102  INFO 11284 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:27:42.220  INFO 11284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:27:42.226  INFO 11284 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 6.447 seconds (JVM running for 7.027)
+2019-06-03 16:28:05.173  INFO 11284 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:28:05.173  INFO 11284 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:28:05.189  INFO 11284 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2019-06-03 16:28:05.305  INFO 11284 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:28:05.312  INFO 11284 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:28:06.182  INFO 11284 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:28:06.183  INFO 11284 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:28:41.042  INFO 11284 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:38:52.161  INFO 1784 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 1784 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:38:52.165 DEBUG 1784 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:38:52.166  INFO 1784 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:38:55.457  INFO 1784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:38:55.502  INFO 1784 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:38:55.502  INFO 1784 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:38:55.745  INFO 1784 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:38:55.745  INFO 1784 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3485 ms
+2019-06-03 16:38:56.626  INFO 1784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:38:56.637  INFO 1784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:38:56.669  INFO 1784 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:38:56.752  INFO 1784 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:38:57.434  INFO 1784 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:38:57.674  INFO 1784 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:38:57.674  INFO 1784 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:38:57.676  INFO 1784 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:38:57.746  INFO 1784 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:38:57.753  INFO 1784 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 6.59 seconds (JVM running for 7.195)
+2019-06-03 16:39:06.838  INFO 1784 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:39:06.839  INFO 1784 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:39:06.858  INFO 1784 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-06-03 16:39:06.961  INFO 1784 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap3,ParameterMap:{}
+2019-06-03 16:39:06.968  INFO 1784 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap3,ParameterMap:{}
+2019-06-03 16:39:07.667  INFO 1784 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap3,ParameterMap:{}
+2019-06-03 16:39:07.709  INFO 1784 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap3,ParameterMap:{}
+2019-06-03 16:39:59.754  INFO 6440 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 6440 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:39:59.760 DEBUG 6440 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:39:59.761  INFO 6440 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:40:03.043  INFO 6440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:40:03.114  INFO 6440 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:40:03.115  INFO 6440 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:40:03.373  INFO 6440 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:40:03.374  INFO 6440 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3512 ms
+2019-06-03 16:40:04.208  INFO 6440 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:40:04.215  INFO 6440 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:40:04.246  INFO 6440 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:40:04.318  INFO 6440 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:40:05.112  INFO 6440 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:40:05.325  INFO 6440 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:40:05.326  INFO 6440 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:40:05.328  INFO 6440 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:40:05.402  INFO 6440 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:40:05.411  INFO 6440 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 6.765 seconds (JVM running for 7.425)
+2019-06-03 16:40:13.447  INFO 6440 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:40:13.447  INFO 6440 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:40:13.465  INFO 6440 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-06-03 16:40:13.570  INFO 6440 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap3,ParameterMap:{}
+2019-06-03 16:40:13.586  INFO 6440 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap3,ParameterMap:{}
+2019-06-03 16:40:14.578  INFO 6440 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap3,ParameterMap:{}
+2019-06-03 16:40:14.590  INFO 6440 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap3,ParameterMap:{}
+2019-06-03 16:40:23.707  INFO 6440 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:40:23.709  INFO 6440 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap,ParameterMap:{}
+2019-06-03 16:40:23.819  INFO 6440 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:40:23.820  INFO 6440 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap,ParameterMap:{}
+2019-06-03 16:40:30.507  INFO 6440 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:40:30.507  INFO 6440 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:40:30.595  INFO 6440 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:40:30.595  INFO 6440 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:41:04.317  INFO 6440 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:42:53.161  INFO 15328 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 15328 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:42:53.165 DEBUG 15328 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:42:53.166  INFO 15328 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:42:56.506  INFO 15328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:42:56.560  INFO 15328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:42:56.561  INFO 15328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:42:56.885  INFO 15328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:42:56.885  INFO 15328 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3618 ms
+2019-06-03 16:42:57.918  INFO 15328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:42:57.929  INFO 15328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:42:57.958  INFO 15328 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:42:58.043  INFO 15328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:42:58.651  INFO 15328 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:42:58.882  INFO 15328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:42:58.883  INFO 15328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:42:58.884  INFO 15328 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:42:58.952  INFO 15328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:42:58.960  INFO 15328 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 6.718 seconds (JVM running for 7.383)
+2019-06-03 16:42:59.344  INFO 15328 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:42:59.345  INFO 15328 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:42:59.363  INFO 15328 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-06-03 16:42:59.464  INFO 15328 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:42:59.472  INFO 15328 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:42:59.494  INFO 15328 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:42:59.494  INFO 15328 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:43:11.632  INFO 15328 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/GMap,ParameterMap:{}
+2019-06-03 16:43:11.633  INFO 15328 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/GMap,ParameterMap:{}
+2019-06-03 16:43:12.400  INFO 15328 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/GMap,ParameterMap:{}
+2019-06-03 16:43:12.400  INFO 15328 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/GMap,ParameterMap:{}
+2019-06-03 16:43:58.043  INFO 15328 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:49:02.575  INFO 16216 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 16216 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:49:02.580 DEBUG 16216 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:49:02.582  INFO 16216 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:49:05.848  INFO 16216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:49:05.887  INFO 16216 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:49:05.887  INFO 16216 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:49:06.138  INFO 16216 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:49:06.139  INFO 16216 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3444 ms
+2019-06-03 16:49:07.172  INFO 16216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:49:07.186  INFO 16216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:49:07.229  INFO 16216 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:49:07.326  INFO 16216 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:49:08.126  INFO 16216 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:49:08.401  INFO 16216 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:49:08.402  INFO 16216 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:49:08.416  INFO 16216 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:49:08.501  INFO 16216 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:49:08.510  INFO 16216 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 7.143 seconds (JVM running for 7.74)
+2019-06-03 16:49:09.343  INFO 16216 --- [http-nio-9003-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-06-03 16:49:09.343  INFO 16216 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-06-03 16:49:09.363  INFO 16216 --- [http-nio-9003-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-06-03 16:49:09.493  INFO 16216 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/GMap,ParameterMap:{}
+2019-06-03 16:49:09.506  INFO 16216 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/GMap,ParameterMap:{}
+2019-06-03 16:49:09.550  INFO 16216 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/GMap,ParameterMap:{}
+2019-06-03 16:49:09.551  INFO 16216 --- [http-nio-9003-exec-1] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/GMap,ParameterMap:{}
+2019-06-03 16:49:18.217  INFO 16216 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap1,ParameterMap:{}
+2019-06-03 16:49:18.217  INFO 16216 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap1,ParameterMap:{}
+2019-06-03 16:49:18.977  INFO 16216 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap1,ParameterMap:{}
+2019-06-03 16:49:18.978  INFO 16216 --- [http-nio-9003-exec-2] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap1,ParameterMap:{}
+2019-06-03 16:49:22.864  INFO 16216 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:22.865  INFO 16216 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:22.945  INFO 16216 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:22.946  INFO 16216 --- [http-nio-9003-exec-3] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:51.059  INFO 16216 --- [http-nio-9003-exec-4] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:51.060  INFO 16216 --- [http-nio-9003-exec-4] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:51.127  INFO 16216 --- [http-nio-9003-exec-4] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:49:51.128  INFO 16216 --- [http-nio-9003-exec-4] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap2,ParameterMap:{}
+2019-06-03 16:50:00.791  INFO 16216 --- [http-nio-9003-exec-5] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap1,ParameterMap:{}
+2019-06-03 16:50:00.792  INFO 16216 --- [http-nio-9003-exec-5] com.example.demo.filter.CrosXssFilter    : CrosXssFilter.......orignal url:/gmap1,ParameterMap:{}
+2019-06-03 16:50:00.866  INFO 16216 --- [http-nio-9003-exec-5] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap1,ParameterMap:{}
+2019-06-03 16:50:00.867  INFO 16216 --- [http-nio-9003-exec-5] com.example.demo.filter.CrosXssFilter    : CrosXssFilter..........doFilter url:/gmap1,ParameterMap:{}
+2019-06-03 16:50:07.325  INFO 16216 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2019-06-03 16:51:40.510  INFO 2416 --- [main] com.example.demo.DemoGitApplication      : Starting DemoGitApplication on 9L9ZL7MT5KT00IF with PID 2416 (D:\work_space_new_2\demo-git\target\classes started by Administrator in D:\work_space_new_2\demo-git)
+2019-06-03 16:51:40.514 DEBUG 2416 --- [main] com.example.demo.DemoGitApplication      : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2019-06-03 16:51:40.517  INFO 2416 --- [main] com.example.demo.DemoGitApplication      : No active profile set, falling back to default profiles: default
+2019-06-03 16:51:43.557  INFO 2416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9003 (http)
+2019-06-03 16:51:43.636  INFO 2416 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-06-03 16:51:43.637  INFO 2416 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-06-03 16:51:43.896  INFO 2416 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-06-03 16:51:43.897  INFO 2416 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3283 ms
+2019-06-03 16:51:44.817  INFO 2416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientInboundChannelExecutor'
+2019-06-03 16:51:44.827  INFO 2416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'clientOutboundChannelExecutor'
+2019-06-03 16:51:44.867  INFO 2416 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'messageBrokerTaskScheduler'
+2019-06-03 16:51:44.967  INFO 2416 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'brokerChannelExecutor'
+2019-06-03 16:51:45.806  INFO 2416 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2019-06-03 16:51:46.066  INFO 2416 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2019-06-03 16:51:46.067  INFO 2416 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [DefaultSubscriptionRegistry[cache[0 destination(s)], registry[0 sessions]]]]
+2019-06-03 16:51:46.069  INFO 2416 --- [main] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2019-06-03 16:51:46.153  INFO 2416 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9003 (http) with context path ''
+2019-06-03 16:51:46.162  INFO 2416 --- [main] com.example.demo.DemoGitApplication      : Started DemoGitApplication in 6.898 seconds (JVM running for 7.479)
+2019-06-03 16:52:44.966  INFO 2416 --- [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
