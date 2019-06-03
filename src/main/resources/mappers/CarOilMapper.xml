@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.caroil.dao.CarOilMapper">
+
+  <resultMap id="BaseResultMap" type="com.example.demo.caroil.model.CarOil">
+    <id column="ID" jdbcType="VARCHAR" property="ID" />
+    <result column="CarNo" jdbcType="VARCHAR" property="carNo" />
+    <result column="PlateNumber" jdbcType="VARCHAR" property="plateNumber" />
+    <result column="TheirUnit" jdbcType="VARCHAR" property="theirUnit" />
+    <result column="Longitude" jdbcType="VARCHAR" property="longitude" />
+    <result column="Latitude" jdbcType="VARCHAR" property="latitude" />
+    <result column="Address" jdbcType="VARCHAR" property="address" />
+    <result column="OilQuantity" jdbcType="DOUBLE" property="oilQuantity" />
+    <result column="GpsTime" jdbcType="TIMESTAMP" property="gpsTime" />
+    <result column="CreateTime" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  
+  <sql id="Base_Column_List">
+    ID, CarNo, PlateNumber, TheirUnit, Longitude, Latitude, Address, OilQuantity, GpsTime, CreateTime
+  </sql>
+  
+  <select id="selectCarOilListByCarNoAndDate" parameterType="java.util.Map" resultMap="BaseResultMap"> <!-- roadclean_car_oil_201809 --> 
+    select <include refid="Base_Column_List" /> from ${tableName}  where CarNo = #{carNo} 
+    AND DATE(GpsTime) = #{date} ORDER BY GpsTime ASC; 
+  </select>
+ 
+ 
+   <!-- 根据用户条件查询分页 -->
+    <select id="findListByPage" parameterType="com.example.demo.util.Page"
+        resultMap="BaseResultMap">
+        select * from roadclean_car_oil_201905
+        where 1=1
+        <if test="condition!=null">
+            <if test="condition.carNo!=null and condition.carNo!=''">
+                and CarNo = #{condition.carNo}
+            </if>
+        </if>
+        limit #{offSet},#{pageSize}
+    </select>
+    <!-- 根据用户条件查询总数 -->
+    <select id="findCountByPage" parameterType="com.example.demo.util.Page"
+        resultType="java.lang.Integer">
+        select count(1) from roadclean_car_oil_201905
+        where 1=1 
+        <if test="condition!=null">
+            <if test="condition.carNo!=null and condition.carNo!=''">
+                and CarNo = #{condition.carNo}
+            </if>
+        </if>
+    </select>
+  
+</mapper>

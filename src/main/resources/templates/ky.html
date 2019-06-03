@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<meta charset="UTF-8" />
+<head>
+    <title>Home</title>
+<script th:src="@{jqueryv2.2.4.min.js}"></script>
+ 
+<script>
+function abc(){
+	$.ajax({ 
+		//url: "http://192.168.20.54:8100/webapp2/test", 
+		url: "http://192.168.20.54:9008/dpsmanage/map2", 
+		// 
+		async:true,
+		success: function(data){
+    		console.log(data);
+    		alert(data.code);
+  		}
+	});
+}
+ 
+	
+
+</script>
+</head>
+<body>
+
+  <div style="text-align:center;">
+         <button id="btn" onclick="abc()">跨域ajax</button>
+  </div>
+</body>
+</html>
+
+
+ 
+ 
